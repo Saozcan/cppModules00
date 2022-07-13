@@ -5,6 +5,10 @@ PhoneBook::PhoneBook() {
 }
 
 void PhoneBook::add(string firstName, string lastName, string nickName, string phoneNumber) {
+    if (firstName.empty() || lastName.empty() || nickName.empty() || phoneNumber.empty()){
+        std::cout << "Cannot enter a empty value.";
+        return ;
+    }
     index++;
     size = index % 8;
     contacts[size].setFirstName(firstName);

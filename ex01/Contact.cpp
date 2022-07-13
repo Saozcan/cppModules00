@@ -13,7 +13,7 @@ string Contact::getLastName() {
 }
 
 void Contact::setLastName(string lastName) {
-    this->lastName = lastName;
+	this->lastName = lastName;
 }
 
 string Contact::getNickName() {
